@@ -1,0 +1,18 @@
+{
+    "Information" : [
+        "The function-role must have access read the stream and write to logs and S3",
+        "Replace account-id with your own account number"
+    ],
+    "profile"     : "default",
+    "region"      : "us-east-1",
+    "configuration" : "Release",
+    "framework"     : "netcoreapp2.1",
+    "function-runtime" : "dotnetcore2.1",
+    "function-memory-size" : 256,
+    "function-timeout"     : 300,
+    "function-handler"     : "LambdaFirehose::LambdaFirehose.Functions::ProcessStreamAsync",
+    "function-name"        : "datalake",
+    "function-role"        : "arn:aws:iam::account-id:role/firehose",
+    "tracing-mode"         : "PassThrough",
+    "environment-variables" : ""
+}
