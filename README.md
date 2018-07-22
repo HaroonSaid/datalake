@@ -22,9 +22,9 @@
 
 #### Prerequists
 
-  You have an AWS Account.
+  You have an AWS Account, you have installed aws cli on your computer
 
-  You have create S3 bucket.
+  You have created S3 bucket.
 
   You have created Kinesis Stream
 
