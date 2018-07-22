@@ -10,18 +10,21 @@
 
 #### To build
   
-  clone the respostory
-  git clone https://github.com/HaroonSaid/datalake.git
-  cd datalake
-  dotnet build
+  clone the respostory.
+  git clone https://github.com/HaroonSaid/datalake.git.
+  cd datalake.
+  dotnet build.
 
 ### Deploying FirhoseLambda
 
 #### Prerequists
 
-  You have an AWS Account
-  You need S3 bucket created
+  You have an AWS Account.
+
+  You need S3 bucket created.
+
   You need Kinesis Stream Configured
+
   You need Kinesis Firhose Configured and pointing to S3 bucket (with tranformation enabled)
 
 ### Deployment
