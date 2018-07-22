@@ -18,19 +18,19 @@
 
   dotnet build
 
-### Deploying FirhoseLambda
+### Deploying the Firehose Lambda
 
 #### Prerequists
 
   You have an AWS Account.
 
-  You need S3 bucket created.
+  You have create S3 bucket.
 
-  You need Kinesis Stream Configured
+  You have created Kinesis Stream
 
-  You need Kinesis Firhose Configured and pointing to S3 bucket (with tranformation enabled)
+  You have configure Kinesis Data Firhose pointing to S3 bucket (with tranformation enabled)
 
-### Deployment
+### Deploying Lambda 
 
   build and deploy the firehose lambda, edit deploy.json with the correct IAM role
 
@@ -43,3 +43,9 @@
 ### Configure Firehose
 
   Configure Kinesis Firehose to invoke the lambda function via the console or command line
+
+### Test with deamon to generate data activity to the kinesis stream
+
+  cd deamon
+
+  dotnet run -s myStreamName -r us-east-1 (optional, defaults to us-east-1)
