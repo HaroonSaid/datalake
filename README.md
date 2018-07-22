@@ -10,10 +10,13 @@
 
 #### To build
   
-  clone the respostory.
-  git clone https://github.com/HaroonSaid/datalake.git.
-  cd datalake.
-  dotnet build.
+  clone the respostory
+
+  git clone https://github.com/HaroonSaid/datalake.git
+
+  cd datalake
+
+  dotnet build
 
 ### Deploying FirhoseLambda
 
@@ -29,11 +32,13 @@
 
 ### Deployment
 
-  build and deploy the firehose lambda
+  build and deploy the firehose lambda, edit deploy.json with the correct IAM role
 
   cd datalake/LambdaFirehose
+
   dotnet build -c Release
-  dotnet lambda deploy-function -cfg deploy.json 
+
+  dotnet lambda deploy-function -cfg deploy.json
 
 ### Configure Firehose
 
