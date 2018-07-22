@@ -36,16 +36,16 @@
             "name": "UserInfo",
             "fields": [
               {
-                "name": "first",
+                "name": "First",
                 "type": "string"
               },
               {
-                "name": "middle",
+                "name": "Middle",
                 "type": "string",
                 "default": ""
               },
               {
-                "name": "last",
+                "name": "Last",
                 "type": "string"
               }
             ]
@@ -62,7 +62,7 @@
             "name": "DealTicket",
             "fields": [
               {
-                "name": "symbol",
+                "name": "Symbol",
                 "type": "string"
               },
               {
@@ -85,10 +85,7 @@
               {
                 "name": "Price",
                 "doc": "The Price",
-                "type": "bytes",
-                "locgicalType": "decimal",
-                "precison": 10,
-                "scale": 5
+                "type": "string"
               }
             ]
           }

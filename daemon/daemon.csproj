@@ -11,6 +11,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\schema\schema.csproj" />
-    <ProjectReference Include="..\kinesis\kinesis.csproj" />
+    <ProjectReference Include="..\producer\producer.csproj" />
   </ItemGroup>
 </Project>

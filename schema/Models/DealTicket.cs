@@ -15,8 +15,8 @@ namespace Models
 	
 	public partial class DealTicket : ISpecificRecord
 	{
-		public static Schema _SCHEMA = Schema.Parse(@"{""type"":""record"",""name"":""DealTicket"",""namespace"":""Models"",""fields"":[{""name"":""symbol"",""type"":""string""},{""name"":""OrderType"",""doc"":""The transaction order type"",""type"":{""type"":""enum"",""name"":""OrderType"",""namespace"":""Models"",""symbols"":[""Buy"",""Sell""]}},{""name"":""Quantity"",""doc"":""The quantity"",""type"":""int""},{""name"":""Price"",""doc"":""The Price"",""type"":""bytes"",""locgicalType"":""decimal"",""precison"":10,""scale"":5}]}");
-		private string _symbol;
+		public static Schema _SCHEMA = Schema.Parse(@"{""type"":""record"",""name"":""DealTicket"",""namespace"":""Models"",""fields"":[{""name"":""Symbol"",""type"":""string""},{""name"":""OrderType"",""doc"":""The transaction order type"",""type"":{""type"":""enum"",""name"":""OrderType"",""namespace"":""Models"",""symbols"":[""Buy"",""Sell""]}},{""name"":""Quantity"",""doc"":""The quantity"",""type"":""int""},{""name"":""Price"",""doc"":""The Price"",""type"":""string""}]}");
+		private string _Symbol;
 		/// <summary>
 		/// The transaction order type
 		/// </summary>
@@ -28,7 +28,7 @@ namespace Models
 		/// <summary>
 		/// The Price
 		/// </summary>
-		private byte[] _Price;
+		private string _Price;
 		public virtual Schema Schema
 		{
 			get
@@ -36,15 +36,15 @@ namespace Models
 				return DealTicket._SCHEMA;
 			}
 		}
-		public string symbol
+		public string Symbol
 		{
 			get
 			{
-				return this._symbol;
+				return this._Symbol;
 			}
 			set
 			{
-				this._symbol = value;
+				this._Symbol = value;
 			}
 		}
 		/// <summary>
@@ -78,7 +78,7 @@ namespace Models
 		/// <summary>
 		/// The Price
 		/// </summary>
-		public byte[] Price
+		public string Price
 		{
 			get
 			{
@@ -93,7 +93,7 @@ namespace Models
 		{
 			switch (fieldPos)
 			{
-			case 0: return this.symbol;
+			case 0: return this.Symbol;
 			case 1: return this.OrderType;
 			case 2: return this.Quantity;
 			case 3: return this.Price;
@@ -104,10 +104,10 @@ namespace Models
 		{
 			switch (fieldPos)
 			{
-			case 0: this.symbol = (System.String)fieldValue; break;
+			case 0: this.Symbol = (System.String)fieldValue; break;
 			case 1: this.OrderType = (Models.OrderType)fieldValue; break;
 			case 2: this.Quantity = (System.Int32)fieldValue; break;
-			case 3: this.Price = (System.Byte[])fieldValue; break;
+			case 3: this.Price = (System.String)fieldValue; break;
 			default: throw new AvroRuntimeException("Bad index " + fieldPos + " in Put()");
 			};
 		}

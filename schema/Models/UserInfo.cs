@@ -15,12 +15,12 @@ namespace Models
 	
 	public partial class UserInfo : ISpecificRecord
 	{
-		public static Schema _SCHEMA = Schema.Parse("{\"type\":\"record\",\"name\":\"UserInfo\",\"namespace\":\"Models\",\"fields\":[{\"name\":\"first\"" +
-				",\"type\":\"string\"},{\"name\":\"middle\",\"default\":\"\",\"type\":\"string\"},{\"name\":\"last\"," +
+		public static Schema _SCHEMA = Schema.Parse("{\"type\":\"record\",\"name\":\"UserInfo\",\"namespace\":\"Models\",\"fields\":[{\"name\":\"First\"" +
+				",\"type\":\"string\"},{\"name\":\"Middle\",\"default\":\"\",\"type\":\"string\"},{\"name\":\"Last\"," +
 				"\"type\":\"string\"}]}");
-		private string _first;
-		private string _middle;
-		private string _last;
+		private string _First;
+		private string _Middle;
+		private string _Last;
 		public virtual Schema Schema
 		{
 			get
@@ -28,46 +28,46 @@ namespace Models
 				return UserInfo._SCHEMA;
 			}
 		}
-		public string first
+		public string First
 		{
 			get
 			{
-				return this._first;
+				return this._First;
 			}
 			set
 			{
-				this._first = value;
+				this._First = value;
 			}
 		}
-		public string middle
+		public string Middle
 		{
 			get
 			{
-				return this._middle;
+				return this._Middle;
 			}
 			set
 			{
-				this._middle = value;
+				this._Middle = value;
 			}
 		}
-		public string last
+		public string Last
 		{
 			get
 			{
-				return this._last;
+				return this._Last;
 			}
 			set
 			{
-				this._last = value;
+				this._Last = value;
 			}
 		}
 		public virtual object Get(int fieldPos)
 		{
 			switch (fieldPos)
 			{
-			case 0: return this.first;
-			case 1: return this.middle;
-			case 2: return this.last;
+			case 0: return this.First;
+			case 1: return this.Middle;
+			case 2: return this.Last;
 			default: throw new AvroRuntimeException("Bad index " + fieldPos + " in Get()");
 			};
 		}
@@ -75,9 +75,9 @@ namespace Models
 		{
 			switch (fieldPos)
 			{
-			case 0: this.first = (System.String)fieldValue; break;
-			case 1: this.middle = (System.String)fieldValue; break;
-			case 2: this.last = (System.String)fieldValue; break;
+			case 0: this.First = (System.String)fieldValue; break;
+			case 1: this.Middle = (System.String)fieldValue; break;
+			case 2: this.Last = (System.String)fieldValue; break;
 			default: throw new AvroRuntimeException("Bad index " + fieldPos + " in Put()");
 			};
 		}
