@@ -5,11 +5,11 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaFirehose", "LambdaFirehose\LambdaFirehose.csproj", "{54FFC5D6-757E-4039-8E73-64346D4A5CA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "schema", "schema\schema.csproj", "{1C8B2864-2169-4374-B82D-7FB6EC33FE8D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "schema", "../../schema\schema.csproj", "{1C8B2864-2169-4374-B82D-7FB6EC33FE8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "daemon", "daemon\daemon.csproj", "{3DC7DE84-93F4-43C3-B560-994307442F5E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "daemon", "daemon/daemon.csproj", "{3DC7DE84-93F4-43C3-B560-994307442F5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "producer", "producer\producer.csproj", "{207A2A54-09BF-4360-A23D-1A1F231997D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kinesis", "kinesis/kinesis.csproj", "{207A2A54-09BF-4360-A23D-1A1F231997D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\schema\schema.csproj" />
+    <ProjectReference Include="../../../schema/schema.csproj" />
   </ItemGroup>
-
 </Project>

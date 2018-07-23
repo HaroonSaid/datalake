@@ -10,7 +10,7 @@
     <PackageReference Include="CommandLineParser" Version="2.2.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\schema\schema.csproj" />
-    <ProjectReference Include="..\producer\producer.csproj" />
+    <ProjectReference Include="../../../schema/schema.csproj" />
+    <ProjectReference Include="../kinesis/kinesis.csproj" />
   </ItemGroup>
 </Project>
