@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Kinesis" Version="3.3.5.9" />
+    <PackageReference Include="CommandLineParser" Version="2.2.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../schema/schema.csproj" />
+    <ProjectReference Include="../kinesisClient/kinesis.csproj" />
+  </ItemGroup>
+</Project>

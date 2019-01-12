@@ -1,0 +1,43 @@
+syntax = "proto3";
+package datalake.schema ;
+
+message UserActivity {
+    enum UserActivityType {
+        CREATED = 0;
+        PASSWORDCHANGED = 1;
+        DEACTIAVTED = 2;
+    }
+    string userId = 1;
+    UserActivityType userActivityType = 2;
+    string system = 3;
+
+}
+message AccountActivity {
+    enum AccountType {
+        CHECKING = 0;
+        SAVING = 1;
+        RETIREMENT = 2;
+        ANUNITY = 3;
+        GL = 4;
+        MORTAGE = 5;
+    }
+    enum AccountActivityType {
+        CREATED = 0;
+        ARCHIVED = 1;
+    }
+    string accountId = 1;
+    AccountType accountType = 2;
+    AccountActivityType accountActivityType = 3;
+    string otherdata = 4;
+}
+message Activity {
+    enum ActivityType {
+        Account = 0;
+        User = 1;
+    }
+    string userId = 1;
+    int64 timestamp = 2;
+    ActivityType activityType = 3;
+    AccountActivity accountActivity = 4;
+    UserActivity userActivity = 5;
+}

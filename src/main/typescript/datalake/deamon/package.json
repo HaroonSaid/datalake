@@ -1,0 +1,14 @@
+{
+  "name": "deamon",
+  "version": "1.0.0",
+  "main": "app.ts",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.2.2",
+    "typescript-logging": "^0.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "ts-node": "^7.0.1"
+  }
+}
