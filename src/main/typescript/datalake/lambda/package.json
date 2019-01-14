@@ -1,0 +1,16 @@
+{
+  "name": "lambda",
+  "version": "1.0.0",
+  "description": "Kinesis Lambda to consumer via protobuf",
+  "main": "handler.js",
+  "repository": "https://github.com/haroonsaid/datalake",
+  "author": "Haroon Said",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.387.0",
+    "google-protobuf": "^3.6.1"
+  }
+}

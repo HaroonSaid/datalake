@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@types/node": "8.10.39",
+    "@types/aws-lambda": "^8.10.17",
+    "@types/google-protobuf": "^3.2.7",
+    "ts-protoc-gen": "^0.9.0"
+  }
+}

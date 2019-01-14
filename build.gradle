@@ -9,13 +9,18 @@
 plugins {
     id 'java'
     id 'application'
-    id "com.google.protobuf" version "0.8.7"
+    id "de.richsource.gradle.plugins.typescript" version "1.8.0"
+    id "com.pivotstir.gogradle" version "1.0.17"
 }
 
 repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    mavenCentral()
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
 }
 
 dependencies {
@@ -35,5 +40,12 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 }
 
+compileTypeScript {
+	source = [file("src/main/typescript/datalake/lambda")]
+}
+
+
 // Define the main class for the application
 mainClassName = 'datalake.App'
+
+
