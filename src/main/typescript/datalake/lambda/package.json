@@ -10,7 +10,7 @@
     "typescript": "^3.2.2"
   },
   "dependencies": {
-    "aws-sdk": "^2.387.0",
+    "aws-sdk": "^2.814.0",
     "google-protobuf": "^3.6.1"
   }
 }
